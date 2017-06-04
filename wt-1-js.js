@@ -26,7 +26,7 @@ module.exports = function(ctx, cb) {
       if (data === undefined) {
         data={};
       }
-      var repoName = body.repository.full_name
+      var repoName = body.repository.full_name;
       data[repoName] === undefined ? data[repoName] = 1 : data[repoName]++;
       attempts = 3 ;
       ctx.storage.set(data, function(error) {
