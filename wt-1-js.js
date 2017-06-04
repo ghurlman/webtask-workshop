@@ -1,5 +1,5 @@
 module.exports = function(ctx, cb) {
-  var slack = require("slack-notify")(ctx.secrets.SLACK_URL);
+  var slack = require("slack-notify")(ctx.secrets.SLACK_HOOK);
   var body = ctx.body;
   var attempts;
   
