@@ -10,7 +10,7 @@ module.exports = function(ctx, cb) {
     console.log("issue created");
     var issue = body.issue;
 
-    var text='*New Issue*\n\n' + 
+    var text='*New Issue!*\n\n' + 
              `Repository: ${body.repository.full_name}\n` +
              `Number: ${issue.number}\n` +
              `Url: ${issue.url}\n` +
